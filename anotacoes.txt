@@ -1,0 +1,10 @@
+- Informações retiradas de https://docs.moodle.org/dev/Blocks:
+	
+	// documentação das funções dos blocos:
+	https://docs.moodle.org/dev/Blocks/Appendix_A
+
+	// Database support:
+	To create the install.xml file, use the "XMLDB editor" (https://docs.moodle.org/dev/XMLDB_editor). See "Database FAQ > XMLDB" (https://docs.moodle.org/dev/Database_FAQ#XMLDB) for further details.
+
+
+-

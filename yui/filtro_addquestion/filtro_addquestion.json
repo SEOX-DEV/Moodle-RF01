@@ -1,0 +1,8 @@
+{
+  "moodle-block_seox_leanblocks-filtro_addquestion": {
+    "requires": [
+        "base",
+        "node"
+    ]
+  }
+}

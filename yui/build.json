@@ -1,0 +1,10 @@
+{
+  "name": "moodle-block_seox_leanblocks-filtro_addquestion",
+  "builds": {
+    "moodle-block_seox_leanblocks-filtro_addquestion": {
+      "jsfiles": [
+        "filtro_addquestion.js"
+      ]
+    }
+  }
+}
