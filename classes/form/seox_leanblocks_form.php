@@ -7,18 +7,12 @@ include_once($CFG->libdir.'/formslib.php');
 class seox_leanblocks_form extends \moodleform {
 
 	private $filtros_areas_content;
-	private $root_area; 
-	private $root_subarea; 
-	private $root_assunto; 
  
     public function definition() {
 
         $mform =& $this->_form;
 
         $this->$filtros_areas_content = array();
-        $this->$root_area =  
-		$this->$root_subarea =  
-		$this->$root_assunto =  
 
         $this->render_select_dificuldades($mform);
         $this->render_select_filtros_areas($mform);
