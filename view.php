@@ -1,7 +1,6 @@
 <?php
 
 require_once('../../config.php');
-require_once('seox_leanblocks_form.php');
 
 global $DB, $OUTPUT, $PAGE;
 
@@ -11,7 +10,7 @@ $PAGE->set_url('/blocks/seox_leanblocks/view.php', array('id' => $questionid));
 $PAGE->set_pagelayout('base');
 $PAGE->set_heading(get_string('seox_leanblocks:finalize_question_title', 'block_seox_leanblocks'));
 
-$thisblock_form = new seox_leanblocks_form();
+$thisblock_form = new block_seox_leanblocks\form\seox_leanblocks_form();
 
 if($thisblock_form->is_cancelled()) {
 	// TODO: deleta questao e redireciona para lugar correto
@@ -63,7 +62,7 @@ if($thisblock_form->is_cancelled()) {
     $site = get_site();
     echo $OUTPUT->header();
 
-	echo '<h3>'.get_string('seox_leanblocks:finalize_question_details_1', 'block_seox_leanblocks').'</h3>';
+    echo html_writer::tag('h3', get_string('seox_leanblocks:finalize_question_details_1', 'block_seox_leanblocks'), null);
 	echo '<br>';
 
 	$thisblock_form->display();

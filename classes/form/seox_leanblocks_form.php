@@ -1,14 +1,17 @@
 <?php
+
+namespace block_seox_leanblocks\form;
+
 include_once($CFG->libdir.'/formslib.php');
 
-class seox_leanblocks_form extends moodleform {
+class seox_leanblocks_form extends \moodleform {
 
 	private $filtros_areas_content;
 	private $root_area; 
 	private $root_subarea; 
 	private $root_assunto; 
  
-    function definition() {
+    public function definition() {
 
         $mform =& $this->_form;
 

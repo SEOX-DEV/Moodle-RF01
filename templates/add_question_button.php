@@ -18,5 +18,5 @@ $params = array(
 	'courseid'	=> $courseid,
 );
 echo '<div class="createnewquestion">';
-create_new_question_button($categoryid, $params, get_string('seox_leanblocks:question_botton_title', 'block_seox_leanblocks'));
+create_new_question_button($categoryid, $params, get_string('seox_leanblocks:question_button_title', 'block_seox_leanblocks'));
 echo '</div>';
